@@ -172,9 +172,28 @@
  <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
-
+                
                 <div class="contact__container bd-grid">
-                    <form  target="_blank" action="https://formsubmit.co/shahriar.nihal@yahoo.com" method="POST" class="contact__form">                     
+
+
+<form target="_blank" action="https://formsubmit.co/shahriar.nihal@yahoo.com" method="POST" class="contact__form">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+
+                    
+                   <!-- <form  target="_blank" action="https://formsubmit.co/shahriar.nihal@yahoo.com" method="POST" class="contact__form">                     
 
                         <div class="form-group">
                          <div class="form-row">
@@ -195,7 +214,7 @@
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                                     </div>
                          <button type="submit" class="contact__button button">Send It</button>
-                    </form>
+                    </form> -->
                 </div>
             </section>
         </main>
