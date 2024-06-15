@@ -457,6 +457,12 @@ img{
         padding-top: 2rem;
     }
 
+    .projects__container{
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+        padding-top: 2rem;
+    }
+    
     .contact{
         &__form{
             width: 360px;
@@ -533,6 +539,14 @@ img{
         column-gap: 2rem;
     }
 }
+
+    .projects__container{
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2rem;
+    }
+}
+
+
 
 @media screen and (min-width: 992px){
     .bd-grid{
