@@ -322,6 +322,23 @@ img {
   transform: scale(1.1);
 }
 
+
+/* ===== PROJECTS =====*/
+.projects__container {
+  row-gap: 2rem;
+}
+.projects__img {
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.projects__img img {
+  transition: 1s;
+}
+.projects__img img:hover {
+  transform: scale(1.1);
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -408,6 +425,12 @@ img {
     column-gap: 2rem;
     padding-top: 2rem;
   }
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 2rem;
+  }
+  
   .contact__form {
     width: 360px;
     padding-top: 2rem;
@@ -472,6 +495,12 @@ img {
     column-gap: 2rem;
   }
 }
+  .projects__container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .bd-grid {
     margin-left: auto;
