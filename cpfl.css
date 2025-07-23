@@ -475,3 +475,39 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
   font-style: italic;
   letter-spacing: 0.01em;
 }
+
+
+/* Trying to fix the popup animation effect's issue. Modification date,time: July 23, 2025 : 01:02 a.m */
+
+.hover-anim {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.18s;
+}
+
+.hover-anim .hover-gif {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: -90px;
+    transform: translateX(-50%);
+    width: 85px;
+    border-radius: 10px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    z-index: 102;
+    pointer-events: none;
+    transition: opacity 0.22s;
+    opacity: 0;
+}
+
+.hover-anim.show-gif .hover-gif {
+    display: block;
+    opacity: 1;
+}
+
+@media (max-width: 700px) {
+    .hover-gif {
+        display: none !important;
+    }
+}
+
