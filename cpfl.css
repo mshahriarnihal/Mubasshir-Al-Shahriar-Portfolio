@@ -716,4 +716,12 @@ body.dark-mode .navbar .container > a:visited {
     color: #ffdb87 !important;
 }
 
+body.dark-mode .navbar-toggler {
+    border-color: #fff; /* This should make button border visible. */
+}
+
+/* Fixing the issue with bootstrap's navbar's humberger looking button's dark mode issue. */ 
+body.dark-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255,0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
 
