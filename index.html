@@ -194,5 +194,20 @@ Date of Initial Design: July 09, 2025
 
 <!-- Linking Bootstrap JS for the borrowed navbar's toggling -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- This JS is for smooth fade-in during the scroll, as part of modified version of my project -->
+<script>
+    document.addEventListener('scroll', () => {
+        const fadeIns = document.querySelectorAll('.fade-in');
+        fadeIns.forEach(fadeIn => {
+            const rect = fadeIn.getBoundingClientRect();
+            if (rect.top < window.innerHeight - 100) {
+                fadeIn.classList.add('visible');
+            }
+        });
+    });
+</script>
+
+
 </body>
 </html>
