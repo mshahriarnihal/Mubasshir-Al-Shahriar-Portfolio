@@ -639,4 +639,81 @@ margin-bottom: 40px;
 }
 
 
+/* For Toggle Position & Animation */
+#theme-toggle-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 32px;
+    z-index: 1200;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* For the rope pulling animation */
+#bulb.pulling #rope, #bulb.pulling #handle {
+    animation: ropePull 0.3s ease-in-out;
+}
+
+@keyframes ropePull {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+    100% { transform: translateY(0); }
+}
+
+
+body.dark-mode {
+    background-color: #1c1f26 !important; /* This is Dark bluish-gray */
+    color: #e8eaed !important;
+}
+
+body.dark-mode .section {
+    background-color: #242830 !important; /* Slightly lighter dark gray */
+    color: #cdd4df !important;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3 {
+    color: #ffdb87 !important; /* This is warm yellow color */
+}
+
+body.dark-mode a {
+    color: #4dabf7; 
+}
+
+body.dark-mode .navbar, 
+body.dark-mode .footer {
+    background-color: #20242c !important; /* Darker shade for navbar & footer */
+    color: #e8eaed !important;
+}
+
+
+body.dark-mode .skills-description {
+    color: #cdd4df !important; 
+}
+
+
+body.light-mode #bulb-glow { opacity: 0.7; }
+body.dark-mode #bulb-glow { opacity: 0; }
+body.dark-mode #bulb-glass { fill: #575c66; stroke: #a0a0a0; }
+
+body.dark-mode .navbar-nav .nav-link {
+    color: #ffdb87 !important;
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    background: #353941 !important;
+    color: #ffd164 !important;
+}
+
+body.dark-mode .navbar .container > a,
+body.dark-mode .navbar .container > a:visited {
+    color: #ffdb87 !important;
+}
+
 
