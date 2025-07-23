@@ -110,6 +110,55 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
     min-width: 230px;
 }
 
+
+
+/* Modifying the about section to enhance / make it more playful. Date: 07.22.2025 : 23:27  */
+.new-about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 36px;
+}
+.about-main {
+  flex: 1 1 320px;
+  min-width: 220px;
+}
+.about-hello {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-right: 8px;
+}
+.about-name {
+  font-size: 1.38em;
+  font-weight: 700;
+}
+.about-bullets {
+  margin: 22px 0 22px 0;
+  padding-left: 0;
+  list-style: none;
+}
+.about-bullets li {
+  font-size: 1.07em;
+  margin-bottom: 13px;
+  padding-left: 0;
+  line-height: 1.5;
+  background: none;
+  color: #1b1c22;
+}
+.about-motto {
+  margin-top: 20px;
+  font-size: 1.12em;
+  font-style: italic;
+  color: #cc7846;
+}
+@media (max-width: 900px) {
+  .new-about-flex { flex-direction: column; align-items: center; }
+  .about-img { margin-bottom: 20px; }
+}
+
+
+
+
 .skills-list {
     display: flex;
     gap: 60px;
