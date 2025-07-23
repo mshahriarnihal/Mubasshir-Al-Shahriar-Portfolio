@@ -38,6 +38,25 @@ Date of Initial Design: July 09, 2025
                 </ul>
             </div>
         </div>
+
+<button id="theme-toggle" aria-label="Toggle Dark Mode"> 
+    <svg id="bulb" width="40" height="80" viewBox="0 0 40 80">
+        <!-- For the bulb's inside part -->
+        <circle id="bulb-glow" cx="20" cy="25" r="18" fill="#ffeb85" opacity="0.7"/>
+        <!-- For bulb's glass -->
+        <circle id="bulb-glass" cx="20" cy="25" r="15" fill="#fffbe9" stroke="#d0c4b5" stroke-width="2"/>
+        <!-- Filament part -->
+        <path d="M15,25 Q20,30 25,25" stroke="#f2c172" stroke-width="2" fill="none"/>
+        <!-- Bulb's base -->
+        <rect x="15" y="40" width="10" height="8" rx="2" fill="#888"/>
+        <!-- Rope part (below the actual bulb structure) -->
+        <rect id="rope" x="18" y="48" width="4" height="25" fill="#ccb98d"/>
+        <!-- To handle pulling the rope part -->
+        <circle id="handle" cx="20" cy="75" r="4" fill="#ccb98d"/>
+    </svg>
+</button>
+
+        
     </nav>
     <link rel="icon" href="assets/img/mshahriarnihal_logo_2.jpg" type="image/x-icon">
 </head>
@@ -240,6 +259,7 @@ document.querySelectorAll('.hover-anim').forEach(function(el) {
 });
 </script>
 
+<script src="dlmode.js"></script>
 
 
 </body>
