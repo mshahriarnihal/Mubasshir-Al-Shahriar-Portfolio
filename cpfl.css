@@ -112,7 +112,7 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 
 
 
-/* Modifying the about section to enhance / make it more playful. Date: 07.22.2025 : 23:27  */
+/* Modifying the about section to enhance / make it more playful. Date: 07.22.2025 : 23:09  */
 .new-about-flex {
   display: flex;
   flex-wrap: wrap;
@@ -155,6 +155,48 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
   .new-about-flex { flex-direction: column; align-items: center; }
   .about-img { margin-bottom: 20px; }
 }
+
+
+/* More modification. July 22 11:41 pm*/
+
+/* Highlight key phrases elegantly */
+.highlight-text {
+    font-weight: 600;
+    color: #cc7846;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.highlight-text:hover {
+    background-color: #ffeacc;
+    color: #86592d;
+    border-radius: 5px;
+}
+
+/* Drop cap for the first letter of paragraph */
+.about-content p::first-letter {
+    font-size: 2.8em;
+    float: left;
+    margin-right: 8px;
+    color: #2255aa;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+ 
+/* New modification ends here. */
+
 
 
 
