@@ -511,3 +511,124 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
     }
 }
 
+
+/* Modification of Home (Hero) Section (Improvements, Enhancement). Date-Time: July 23, 2025 : 01:31 a.m  */
+.hero-section {
+    background: #333;
+    padding: 38px 0 30px 0; /* reduced vertical space */
+    border-radius: 0 0 24px 24px;
+    box-shadow: 0 4px 26px rgba(0,0,0,0.08);
+    margin-bottom: 0;
+}
+
+.home-container {
+    max-width: 950px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-left {
+    flex: 1 1 350px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 250px;
+}
+
+.home-left h1 {
+    color: #fff;
+    font-size: 2.1em;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 7px;
+}
+.home-left .highlight2 {
+    color: #cc7846;
+}
+
+.home-left .subtitle {
+    font-size: 1.15em;
+    color: #b1bccf;
+    margin-bottom: 14px;
+}
+
+.home-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.home-actions .button {
+    margin: 0;
+    padding: 9px 22px;
+    font-size: 1em;
+    border-radius: 6px;
+    background: #cc7846;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 2px 8px rgba(50,60,70,0.08);
+    transition: background 0.17s;
+}
+.home-actions .button:hover {
+    background: #cf7b48;
+    color: #fff;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.social-links a {
+    color: #a3c4e5;
+    font-size: 1.46em;
+    background: none;
+    border-radius: 7px;
+    transition: color 0.17s, background 0.17s;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+.social-links a:hover {
+    color: #cc7846;
+    background: #222;
+}
+
+.home-right {
+    flex: 0 0 185px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-profile-img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #f3e8da;
+    box-shadow: 0 4px 28px rgba(50,50,70,0.14);
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .home-container {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+        text-align: center;
+    }
+    .home-left, .home-right { align-items: center; justify-content: center; min-width: 0; }
+    .home-left h1 { font-size: 1.5em; }
+    .hero-profile-img { width: 110px; height: 110px; }
+    .home-actions { flex-direction: column; gap: 8px; }
+}
+
+
+
