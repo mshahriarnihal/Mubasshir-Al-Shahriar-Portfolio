@@ -24,7 +24,15 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 .highlight { color: #ee7733; }
 .highlight2 { color: #cc7846; }
 
-.home-section { background: #333333; border-bottom: 1px solid #c7d4f6; }
+.home-section { 
+background: #333333; 
+border-bottom: 1px solid #c7d4f6; 
+padding-top: 12px;
+padding-bottom: 12px;
+margin-bottom: 40px;
+}
+
+
 .home-content {
     display: flex;
     flex-wrap: wrap;
