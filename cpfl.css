@@ -955,3 +955,106 @@ body.dark-mode .skill-label{  /* Modifying new skill section's skill-label color
         border-color: #ffb964;
         box-shadow: 0 2px 18px rgba(210, 150, 30, 0.14);
     }
+
+
+.projects-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 16px;
+}
+
+.project-card {
+    background: #fff;
+    width: 290px;
+    min-height: 235px;
+    border-radius: 16px;
+    box-shadow: 0 2px 18px rgba(80,80,130,0.07);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    transition: box-shadow 0.28s, transform 0.18s;
+    position: relative;
+}
+
+.project-card:hover {
+    box-shadow: 0 6px 24px rgba(60,80,140,0.17);
+    transform: translateY(-6px) scale(1.03);
+    z-index: 2;
+}
+
+.project-img {
+    height: 140px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: filter 0.25s;
+    filter: brightness(1) contrast(1.03);
+}
+
+.project-card:hover .project-img {
+    filter: brightness(0.62) blur(1.2px) grayscale(0.1);
+}
+
+.project-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: transparent;
+    padding: 16px 18px 14px 18px;
+    transition: background 0.2s;
+    position: relative;
+    min-height: 80px;
+}
+
+.project-title {
+    font-size: 1.13em;
+    font-weight: 700;
+    color: #2255aa;
+    margin-bottom: 6px;
+    letter-spacing: 0.01em;
+    transition: color 0.15s;
+}
+.project-desc {
+    font-size: 0.97em;
+    color: #252830;
+    line-height: 1.45;
+    opacity: 0.83;
+    transition: color 0.13s;
+}
+.project-card:hover .project-title {
+    color: #cc7846;
+}
+.project-card:hover .project-info {
+    background: rgba(255,255,255,0.72);
+}
+
+@media (max-width: 1000px) {
+    .projects-showcase { gap: 18px; }
+    .project-card { width: 94vw; max-width: 390px; }
+}
+@media (max-width: 600px) {
+    .projects-showcase { gap: 8vw; }
+    .project-card { width: 97vw; min-width: 0; }
+    .project-img { height: 33vw; min-height: 110px; }
+}
+
+body.dark-mode .project-card {
+    background: #1f2129;
+    box-shadow: 0 2px 18px rgba(50,50,90,0.16);
+}
+body.dark-mode .project-title {
+    color: #ffdb87;
+}
+body.dark-mode .project-desc {
+    color: #ebebee;
+}
+body.dark-mode .project-card:hover .project-title {
+    color: #ffb964;
+}
+body.dark-mode .project-card:hover .project-info {
+    background: rgba(30, 30, 38, 0.79);
+}
