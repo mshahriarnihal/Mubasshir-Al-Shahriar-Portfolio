@@ -841,3 +841,117 @@ body.dark-mode .skill-label{  /* Modifying new skill section's skill-label color
     color: lightgoldenrodyellow !important;
 }
 
+
+
+/* Adding this additional "Experience Section" CSS for the modified/renovated experience section in my portfolio. Modification Date/Time: July 25, 2025 : 03:24 a.m. */
+
+.experience-cards {
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 22px;
+}
+
+.exp-card {
+    background: #faf9f7;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(50,50,70,0.08);
+    padding: 28px 24px 18px 24px;
+    min-width: 280px;
+    max-width: 330px;
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    transition: transform 0.16s, box-shadow 0.16s;
+    border: 1.5px solid #eceae4;
+    cursor: pointer;
+}
+.exp-card:hover {
+    box-shadow: 0 6px 30px rgba(30,55,120,0.10);
+    transform: translateY(-6px) scale(1.03);
+    border-color: #ffeacc;
+}
+
+.exp-icon {
+    font-size: 2.4em;
+    color: #cc7846;
+    background: #fff4e3;
+    border-radius: 50%;
+    padding: 17px 18px 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 48px;
+    box-shadow: 0 2px 8px rgba(200,120,70,0.06);
+}
+
+.exp-details {
+    flex: 1;
+    min-width: 0;
+}
+
+.exp-role {
+    font-weight: 700;
+    font-size: 1.14em;
+    color: #333;
+    margin-bottom: 2px;
+}
+.exp-place {
+    font-size: 1.02em;
+    color: #666;
+    margin-bottom: 8px;
+}
+.exp-year {
+    background: #eee5d2;
+    color: #cc7846;
+    font-size: 0.99em;
+    padding: 2px 8px;
+    border-radius: 8px;
+    margin-left: 6px;
+}
+.exp-summary {
+    font-size: 0.99em;
+    color: #555;
+    margin-top: 2px;
+    line-height: 1.45;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .experience-cards { flex-direction: column; gap: 20px; align-items: center; }
+    .exp-card { max-width: 97vw; min-width: 220px; }
+}
+
+.exp-link { text-decoration: none; color: inherit; }
+.exp-link:hover, .exp-link:focus { color: inherit; }
+.exp-link .exp-card { cursor: pointer; }
+
+
+  /* Modifying renovated exp section's exp-card bg color's dark mode version */
+    body.dark-mode .exp-card {
+        background: #232632;
+        color: #ffd164;
+        border: 1.5px solid #2d3242;
+        box-shadow: 0 4px 18px rgba(80, 80, 130, 0.13);
+    }
+    body.dark-mode .exp-card .exp-icon {
+        color: #ffd164;
+        background: #353941;
+    }
+    body.dark-mode .exp-card .exp-role {
+        color: #ffdb87;
+    }
+    body.dark-mode .exp-card .exp-place,
+    body.dark-mode .exp-card .exp-summary,
+    body.dark-mode .exp-year {
+        color: #cc7846;
+    }
+    body.dark-mode .exp-link:focus .exp-card,
+    body.dark-mode .exp-link:hover .exp-card {
+        border-color: #ffb964;
+        box-shadow: 0 2px 18px rgba(210, 150, 30, 0.14);
+    }
