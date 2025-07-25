@@ -1,7 +1,11 @@
 <!--
 Author: Mubasshir Al Shahriar (Nihal)
 Date of Initial Design: July 09, 2025
-2nd Modification: July 22, 2025
+2nd Major Modification Starts On: July 22, 2025
+3rd Major Modification Starts On: July 24, 2025
+Last Modification: July 25, 2025
+
+
 
 -->
 
@@ -20,9 +24,9 @@ Date of Initial Design: July 09, 2025
 
 
     <!-- Adding a navbar from bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light shadow-sm mb-3" style="background-color: #dad6cb;"> <!-- #2f334c nv #fdf1cb #E0FDF2 Using little bit of inline CSS here to override the default nnavbar color of the bootstrap one -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm mb-3" style="background-color: #dad6cb;">
         <div class="container">
-            <a style="text-decoration: none; color: #2f334c; font-weight: bold; " href="./index.html">  Mubasshir Al Shahriar  </a>
+            <a style="text-decoration: none; color: #2f334c; font-weight: bold;" href="./index.html">Mubasshir Al Shahriar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,27 +41,21 @@ Date of Initial Design: July 09, 2025
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
+
+            <!-- Moving the bulb toggle button here to do the suggested adjustment -->
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg id="bulb" width="40" height="80" viewBox="0 0 40 80">
+                    <circle id="bulb-glow" cx="20" cy="25" r="18" fill="#ffeb85" opacity="0.7"/>
+                    <circle id="bulb-glass" cx="20" cy="25" r="15" fill="#fffbe9" stroke="#d0c4b5" stroke-width="2"/>
+                    <path d="M15,25 Q20,30 25,25" stroke="#f2c172" stroke-width="2" fill="none"/>
+                    <rect x="15" y="40" width="10" height="8" rx="2" fill="#888"/>
+                    <rect id="rope" x="18" y="48" width="4" height="25" fill="#ccb98d"/>
+                    <circle id="handle" cx="20" cy="75" r="4" fill="#ccb98d"/>
+                </svg>
+            </button>
         </div>
-
-<button id="theme-toggle" aria-label="Toggle Dark Mode"> 
-    <svg id="bulb" width="40" height="80" viewBox="0 0 40 80">
-        <!-- For the bulb's inside part -->
-        <circle id="bulb-glow" cx="20" cy="25" r="18" fill="#ffeb85" opacity="0.7"/>
-        <!-- For bulb's glass -->
-        <circle id="bulb-glass" cx="20" cy="25" r="15" fill="#fffbe9" stroke="#d0c4b5" stroke-width="2"/>
-        <!-- Filament part -->
-        <path d="M15,25 Q20,30 25,25" stroke="#f2c172" stroke-width="2" fill="none"/>
-        <!-- Bulb's base -->
-        <rect x="15" y="40" width="10" height="8" rx="2" fill="#888"/>
-        <!-- Rope part (below the actual bulb structure) -->
-        <rect id="rope" x="18" y="48" width="4" height="25" fill="#ccb98d"/>
-        <!-- To handle pulling the rope part -->
-        <circle id="handle" cx="20" cy="75" r="4" fill="#ccb98d"/>
-    </svg>
-</button>
-
-        
     </nav>
+
     <link rel="icon" href="assets/img/mshahriarnihal_logo_2.jpg" type="image/x-icon">
 </head>
 
@@ -100,12 +98,12 @@ Date of Initial Design: July 09, 2025
 
                 I enjoy exploring new tech trends, learn about newer innovative technologies and love to explore the mechanism behind them. I love to explore how the <span class="highlight-text">ever-evolving modern tech world</span> is playing the role of steering-force in modern economics.<br><br>
 
-                I find my happiness in programming, problem solving, and building projects with out-of-box ideas. Equipped with proficiency in programming languages such as 
-                <span class="highlight-text hover-anim" data-img="assets/img/cpp-anim.gif" data-alt="C++">C++</span>, 
+                I find my happiness in programming, problem solving, and building projects with out-of-box ideas. Equipped with proficiency in programming languages such as
+                <span class="highlight-text hover-anim" data-img="assets/img/cpp-anim.gif" data-alt="C++">C++</span>,
                 <span class="highlight-text hover-anim" data-img="assets/img/java-anim.gif" data-alt="Java">Java</span>,
-                etc., as well as web-based languages like 
-                <span class="highlight-text hover-anim" data-img="assets/img/html-anim.gif" data-alt="HTML">HTML</span> and 
-                <span class="highlight-text hover-anim" data-img="assets/img/css-anim.gif" data-alt="CSS">CSS</span>, 
+                etc., as well as web-based languages like
+                <span class="highlight-text hover-anim" data-img="assets/img/html-anim.gif" data-alt="HTML">HTML</span> and
+                <span class="highlight-text hover-anim" data-img="assets/img/css-anim.gif" data-alt="CSS">CSS</span>,
                 I've embarked on numerous projects, both solo and collaborative. <span class="highlight-text">I quickly adapt to new situations and enthusiastically embrace new challenges.</span><br><br>
 
                 Beyond the realm of technology, I find solace in nature's embrace, indulging in travel and cultural exploration. This multifaceted perspective fuels my <span class="highlight-text">creative endeavors and fosters a well-rounded approach to problem-solving.</span><br><br>
@@ -239,24 +237,24 @@ Date of Initial Design: July 09, 2025
 </script>
 
 <script>
-document.querySelectorAll('.hover-anim').forEach(function(el) {
-    el.addEventListener('mouseenter', function(e) {
-        if (window.innerWidth < 700) return; // Don't show on mobile/tablet
-        // If GIF already present, do nothing
-        if (el.querySelector('.hover-gif')) return;
-        var img = document.createElement('img');
-        img.src = el.dataset.img;
-        img.alt = el.dataset.alt || '';
-        img.className = 'hover-gif';
-        el.appendChild(img);
-        el.classList.add('show-gif');
+    document.querySelectorAll('.hover-anim').forEach(function(el) {
+        el.addEventListener('mouseenter', function(e) {
+            if (window.innerWidth < 700) return; // Don't show on mobile/tablet
+            // If GIF already present, do nothing
+            if (el.querySelector('.hover-gif')) return;
+            var img = document.createElement('img');
+            img.src = el.dataset.img;
+            img.alt = el.dataset.alt || '';
+            img.className = 'hover-gif';
+            el.appendChild(img);
+            el.classList.add('show-gif');
+        });
+        el.addEventListener('mouseleave', function(e) {
+            el.classList.remove('show-gif');
+            let gif = el.querySelector('.hover-gif');
+            if(gif) gif.remove();
+        });
     });
-    el.addEventListener('mouseleave', function(e) {
-        el.classList.remove('show-gif');
-        let gif = el.querySelector('.hover-gif');
-        if(gif) gif.remove();
-    });
-});
 </script>
 
 <script src="dlmode.js"></script>
