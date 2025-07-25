@@ -206,37 +206,116 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 /* New modification ends here. */
 
 
-
-
-
-.skills-list {
+/* Modifying skill section. Date: July 25, 2025 : 02:17 a.m. */
+.skills-cards-container {
     display: flex;
-    gap: 60px;
-    align-items: left;
-    justify-content: left;
-    margin-bottom: 22px;
     flex-wrap: wrap;
+    gap: 34px;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 18px;
 }
 
-.txtSkill {
-    border-bottom: 2px solid #303336;
+
+.skill-card {
+    background: #f9fafc;
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(40,60,80,0.07);
+    width: 190px;  /*155 160*/
+    height: 195px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    transition:
+            box-shadow 0.3s,
+            transform 0.19s cubic-bezier(.39,1.68,.58,.86),
+            background 0.23s;
+    position: relative;
+    overflow: hidden;
 }
 
+.skill-card:hover {
+    box-shadow: 0 10px 38px rgba(204,120,70,0.16), 0 2px 8px #ffdb87;
+    transform: translateY(-7px) scale(1.045);
+    background: #fffbe9;
+}
 
-.skills-list ul {
-    list-style: disc inside;
-    font-size: 1.05em;
-    padding-left: 0px;
+.skill-icon {
+    margin-top: 18px;
+    margin-bottom: 14px;
+    width: 44px;
+    height: 44px;
+    border-radius: 11px;
+    background: #e6e8eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.15em;
+    transition: background 0.26s;
 }
-.skills-img {
-    width: 290px;
-    height: 160px;
-    border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-    object-fit: cover;
-    margin-left: 100px;
-    margin-bottom: 71px;
+
+/* Manually making Animated SVG icons */
+.skill-icon.cpp { background: linear-gradient(135deg, #6296ea 65%, #232a38 100%);}
+.skill-icon.java { background: linear-gradient(135deg, #e87b36 65%, #235c91 100%);}
+.skill-icon.html { background: linear-gradient(135deg, #e44d26 70%, #f9f9fa 100%);}
+.skill-icon.css { background: linear-gradient(135deg, #2862e9 70%, #e0e3fd 100%);}
+.skill-icon.mips { background: linear-gradient(135deg, #333 70%, #6d6b6b 100%);}
+.skill-icon.pm { background: linear-gradient(135deg, #cc7846 60%, #ffe4ba 100%);}
+.skill-icon.js { background: linear-gradient(135deg, #e87b36 65%, #235c91 100%);}
+
+
+/* FontAwesome/Bootstrap icons inside the skill icons  */
+.skill-icon.cpp::before         { content: "💻"; }
+.skill-icon.java::before        { content: "☕"; }
+.skill-icon.html::before        { content: "🌐"; }
+.skill-icon.css::before         { content: "🎨"; }
+.skill-icon.mips::before        { content: "🧮"; }
+.skill-icon.pm::before          { content: "📈"; }
+.skill-icon.js::before          { content: "⚙️"; }
+
+.skill-label {
+    font-weight: 700;
+    font-size: 1.13em;
+    letter-spacing: 0.01em;
+    color: #2f334c;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
+
+.skill-detail {
+    font-size: 0.96em;
+    color: #cc7846;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.24s, transform 0.27s;
+    pointer-events: none;
+    text-align: center;
+    padding: 0 7px;
+}
+
+.skill-card:hover .skill-detail {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .skills-cards-container {
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+    .skill-card { width: 40vw; min-width: 130px; }
+}
+@media (max-width: 600px) {
+    .skills-cards-container {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .skill-card { width: 98vw; min-width: 0; }
+}
+
+/* New (3rd) modification ends here. */
 
 .skills-description {
     font-size: 1em;
