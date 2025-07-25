@@ -10,9 +10,9 @@ a { color: #335eea; text-decoration: none; }
 a:hover { text-decoration: underline; }
 
 .section {
-    background-color: #ff0000; /* As a part of 3rd major modification, changing the section's bg color from #eae8e0 to clean white according to the feedback so it makes the page look like more breathable, not confined. */
+    background-color: #fff; /* As a part of 3rd major modification, changing the section's bg color from #eae8e0 to clean white according to the feedback so it makes the page look like more breathable, not confined. */
     padding: 60px 20px;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto 10px; /* bottom 10px, making little whitspace after each sections (about, exp, projects etc.) */
 }
 
