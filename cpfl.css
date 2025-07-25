@@ -330,20 +330,30 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 .contact-form textarea { resize: vertical; }
 .contact-form button { width: 120px; align-self: flex-end; }
 
+/* Updating footer color and making it relevant with the nav bar color. Modification date/time: July 25, 2025 : 12:20 a.m. */
 .footer {
-    background: #2255aa;
-    color: #fff;
+    background: #dad6cb;
+    color: #303336;
     text-align: center;
     padding: 28px 0 10px;
     font-size: 1em;
     margin-top: 40px;
 }
+
 .footer-social a {
     margin: 0 10px;
-    color: #e3eaff;
-    font-size: 1em;
+    color: #303336;
+    font-size: 1.35em;
+    transition: color 0.16s, background 0.18s;
+    background: transparent;
+    border-radius: 8px;
+    padding: 3px 6px;
+    display: inline-block;
 }
-.footer-social a:hover { text-decoration: underline; }
+.footer-social a:hover {
+    background: #f3e8da;
+    color: #cc7846;
+}
 .footer-copy {
     margin-top: 9px;
     font-size: 0.95em;
@@ -524,7 +534,7 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 .hero-section {
     background: #333;
     padding: 38px 0 20px 0; /* reducing vertical space here */
-    /* Changing the border radius (bended and sharp edge part), as I was suggested during the office hour. Now the top corners are rounded, bottom are sharp. */
+    /* Changing the border radius (bended and sharp edge part), as I was suggested during the office hour. Now the top corners are rounded, bottom are sharp */
     border-radius: 24px 24px 0 0;
     box-shadow: 0 4px 26px rgba(0,0,0,0.08);
     margin-bottom: 14px;
