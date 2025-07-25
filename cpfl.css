@@ -96,7 +96,7 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
     text-align: left;
     border-bottom: 2px solid #303336;
     padding-bottom: 3px;
-    margin-bottom: 90px;
+    margin-bottom: 40px; /* Changing the margin-bottom from 90px to 40px to make it look better and make sure it doesn't feel like a separate section. */
 }
 
 .about-content {
