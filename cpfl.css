@@ -24,12 +24,12 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 .highlight { color: #ee7733; }
 .highlight2 { color: #cc7846; }
 
-.home-section { 
-background: #333333; 
-border-bottom: 1px solid #c7d4f6; 
-padding-top: 12px;
-padding-bottom: 12px;
-margin-bottom: 40px;
+.home-section {
+    background: #333333;
+    border-bottom: 1px solid #c7d4f6;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 40px;
 }
 
 
@@ -43,7 +43,7 @@ margin-bottom: 40px;
     padding: 0;
 }
 .home-text { flex: 2 1 340px;
-             color: #f0f0ef;
+    color: #f0f0ef;
 
 }
 .home-text h1 { font-size: 2em; }
@@ -122,46 +122,46 @@ margin-bottom: 40px;
 
 /* Modifying the about section to enhance / make it more playful. Date: 07.22.2025 : 23:09  */
 .new-about-flex {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 36px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 36px;
 }
 .about-main {
-  flex: 1 1 320px;
-  min-width: 220px;
+    flex: 1 1 320px;
+    min-width: 220px;
 }
 .about-hello {
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-right: 8px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 8px;
 }
 .about-name {
-  font-size: 1.38em;
-  font-weight: 700;
+    font-size: 1.38em;
+    font-weight: 700;
 }
 .about-bullets {
-  margin: 22px 0 22px 0;
-  padding-left: 0;
-  list-style: none;
+    margin: 22px 0 22px 0;
+    padding-left: 0;
+    list-style: none;
 }
 .about-bullets li {
-  font-size: 1.07em;
-  margin-bottom: 13px;
-  padding-left: 0;
-  line-height: 1.5;
-  background: none;
-  color: #1b1c22;
+    font-size: 1.07em;
+    margin-bottom: 13px;
+    padding-left: 0;
+    line-height: 1.5;
+    background: none;
+    color: #1b1c22;
 }
 .about-motto {
-  margin-top: 20px;
-  font-size: 1.12em;
-  font-style: italic;
-  color: #cc7846;
+    margin-top: 20px;
+    font-size: 1.12em;
+    font-style: italic;
+    color: #cc7846;
 }
 @media (max-width: 900px) {
-  .new-about-flex { flex-direction: column; align-items: center; }
-  .about-img { margin-bottom: 20px; }
+    .new-about-flex { flex-direction: column; align-items: center; }
+    .about-img { margin-bottom: 20px; }
 }
 
 
@@ -202,7 +202,7 @@ margin-bottom: 40px;
     opacity: 1;
     transform: translateY(0);
 }
- 
+
 /* New modification ends here. */
 
 
@@ -270,7 +270,7 @@ margin-bottom: 40px;
     border-radius: 12px;
     box-shadow: 0 2px 16px rgba(0,0,0,0.11);
     border: 2px solid #ececec;
-    background: #222;           
+    background: #222;
     margin: 0 auto;
     transition: transform 0.21s, border-color 0.15s;
 }
@@ -405,83 +405,83 @@ margin-bottom: 40px;
     font-weight: 500;
     font-size: 1.07em;
     letter-spacing: 0.02em;
-     
+
 }
 
 
 .navbar-nav .nav-link:hover {
     background: #f3e8da;
     color: #303336;
-    border-color: #303336;        
+    border-color: #303336;
     box-shadow: 0 1px 7px rgba(201,111,50,0.12);
 }
 
 }
 
-  /* To re-size gaps between projects' images */
+/* To re-size gaps between projects' images */
 
 
 
 /* For popup animation inside About section */
 .hover-keyword {
-  position: relative;
-  cursor: pointer;
-  color: inherit;
-  font-weight: inherit;
-  display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: inherit;
+    font-weight: inherit;
+    display: inline-block;
 }
 
 .hover-keyword .popup-box {
-  display: none;
-  position: absolute;
-  left: 50%;
-  bottom: 120%;
-  transform: translateX(-50%) scale(0.96);
-  min-width: 130px;
-  background: #fffbe9;
-  border: 1.5px solid #eee2ce;
-  color: #2f334c;
-  border-radius: 14px;
-  padding: 12px 13px 6px 13px;
-  box-shadow: 0 6px 28px rgba(50,70,120,0.12);
-  font-size: 1em;
-  font-weight: 500;
-  text-align: center;
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.24s, transform 0.21s;
-  animation: popBounce 0.4s cubic-bezier(.47,1.64,.41,.87) both;
+    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: 120%;
+    transform: translateX(-50%) scale(0.96);
+    min-width: 130px;
+    background: #fffbe9;
+    border: 1.5px solid #eee2ce;
+    color: #2f334c;
+    border-radius: 14px;
+    padding: 12px 13px 6px 13px;
+    box-shadow: 0 6px 28px rgba(50,70,120,0.12);
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.24s, transform 0.21s;
+    animation: popBounce 0.4s cubic-bezier(.47,1.64,.41,.87) both;
 }
 
 @keyframes popBounce {
-  0% { transform: translateX(-50%) scale(0.7); opacity: 0;}
-  60% { transform: translateX(-50%) scale(1.08); opacity: 1;}
-  90% { transform: translateX(-50%) scale(0.98);}
-  100% { transform: translateX(-50%) scale(1); opacity: 1;}
+    0% { transform: translateX(-50%) scale(0.7); opacity: 0;}
+    60% { transform: translateX(-50%) scale(1.08); opacity: 1;}
+    90% { transform: translateX(-50%) scale(0.98);}
+    100% { transform: translateX(-50%) scale(1); opacity: 1;}
 }
 
 .hover-keyword:hover .popup-box,
 .hover-keyword:focus .popup-box {
-  display: block;
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateX(-50%) scale(1);
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) scale(1);
 }
 
 .popup-anim {
-  height: 38px;
-  margin-bottom: 6px;
-  border-radius: 6px;
+    height: 38px;
+    margin-bottom: 6px;
+    border-radius: 6px;
 }
 
 .popup-label {
-  color: #cc7846;
-  font-size: 0.96em;
-  font-weight: 700;
-  margin-top: 0px;
-  font-style: italic;
-  letter-spacing: 0.01em;
+    color: #cc7846;
+    font-size: 0.96em;
+    font-weight: 700;
+    margin-top: 0px;
+    font-style: italic;
+    letter-spacing: 0.01em;
 }
 
 
@@ -520,11 +520,12 @@ margin-bottom: 40px;
 }
 
 
-/* Modification of Home (Hero) Section (Improvements, Enhancement). Last Modification Date-Time: July 23, 2025 : 02:01 a.m  */
+/* Modification of Home (Hero) Section (Improvements, Enhancement). 2nd Modification Date-Time: July 23, 2025 : 02:01 a.m. 3rd (last) Modification: July 24 11:34 pm.  */
 .hero-section {
     background: #333;
     padding: 38px 0 20px 0; /* reducing vertical space here */
-    border-radius: 0 0 24px 24px;
+    /* Changing the border radius (bended and sharp edge part), as I was suggested during the office hour. Now the top corners are rounded, bottom are sharp. */
+    border-radius: 24px 24px 0 0;
     box-shadow: 0 4px 26px rgba(0,0,0,0.08);
     margin-bottom: 14px;
 }
@@ -647,12 +648,31 @@ margin-bottom: 40px;
     z-index: 1200;
 }
 
+
+/* Modifying it to push the bulb button slightly towards left as I was instructed. This is my 3rd attempt of modification. Date-time: July 24, 2025 : 11:44 pm. */
+
 #theme-toggle {
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
+    margin-left: 22px;   /* Pushes it a bit left from edge */
+    margin-right: 0;
+    position: static;    /* Remove any fixed/absolute! */
+    vertical-align: middle;
+    display: inline-block;
 }
+
+@media (max-width: 700px) {
+    #theme-toggle {
+        margin-left: 0;
+        margin-right: 0;
+        /* keep as inline-block, don't change position for mobile */
+    }
+}
+
+
+
 
 /* For the rope pulling animation */
 #bulb.pulling #rope, #bulb.pulling #handle {
@@ -676,17 +696,17 @@ body.dark-mode .section {
     color: #cdd4df !important;
 }
 
-body.dark-mode h1, 
-body.dark-mode h2, 
+body.dark-mode h1,
+body.dark-mode h2,
 body.dark-mode h3 {
     color: #ffdb87 !important; /* This is warm yellow color */
 }
 
 body.dark-mode a {
-    color: #4dabf7; 
+    color: #4dabf7;
 }
 
-body.dark-mode .navbar, 
+body.dark-mode .navbar,
 body.dark-mode .footer {
     background-color: #20242c !important; /* Darker shade for navbar & footer */
     color: #e8eaed !important;
@@ -694,7 +714,7 @@ body.dark-mode .footer {
 
 
 body.dark-mode .skills-description {
-    color: #cdd4df !important; 
+    color: #cdd4df !important;
 }
 
 
@@ -720,8 +740,7 @@ body.dark-mode .navbar-toggler {
     border-color: #fff; /* This should make button border visible. */
 }
 
-/* Fixing the issue with bootstrap's navbar's humberger looking button's dark mode issue. */ 
+/* Fixing the issue with bootstrap's navbar's humberger looking button's dark mode issue. */
 body.dark-mode .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,255,255,0.95)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
 }
-
