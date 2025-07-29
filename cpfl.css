@@ -222,7 +222,7 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
     border-radius: 16px;
     box-shadow: 0 2px 20px rgba(40,60,80,0.07);
     width: 198px;  /*155 160*/
-    height: 221px;
+    height: 234px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -287,7 +287,7 @@ h3 { font-size: 1.25em; margin-bottom: 10px; }
 .skill-detail {
     font-size: 0.96em;
     color: #cc7846;
-    opacity: 0;
+/*    opacity: 0;  For 4th modification */ 
     transform: translateY(16px);
     transition: opacity 0.24s, transform 0.27s;
     pointer-events: none;
