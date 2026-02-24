@@ -839,7 +839,7 @@ body.dark-mode .skill-card{  /* Modifying new skill section's skill-card bg colo
     background-color: #20242c !important;
 }
 body.dark-mode .skill-label{  /* Modifying new skill section's skill-label color's dark mode version */
-    color: #20242c !important;
+    color: golden !important;
 }
 
 
